@@ -23,4 +23,6 @@
     {% elif not posts %}
             <h1 style="color: blue; text-align: center">No Posts Found !</h1>
     {% endif %}
+
+    {% include "pagination.html" with page=posts %}
 {% endblock %}
